@@ -1,0 +1,35 @@
+$sql="SELECT AdminAprroval FROM venue WHERE booking='$book'";
+if($sql==1)  {
+     echo "booking is confirmed";
+	
+}
+else if($sql==2)
+{
+        $message = "Your booking is cancelled";
+	echo "<script type='text/javascript'>alert('$message');</script>";
+	echo "<br>";
+}
+else if($sql==0)
+{
+        $message = "Your booking is pending";
+	echo "<script type='text/javascript'>alert('$message');</script>";
+	echo "<br>";
+}
+
+
+
+
+
+
+if(($conn,"SELECT AdminAprroval FROM venue WHERE booking='$book' AND AdminAprroval='1' "))
+{
+echo "Your Venue is booked";
+}
+
+if(($conn,"SELECT AdminAprroval FROM venue WHERE booking='$book' and AdminAprroval='2' "))
+{
+echo "Your Venue is cancelled";
+}
+if(($conn,"SELECT AdminAprroval FROM venue WHERE booking='$book' and AdminAprroval='0' "))
+{
+echo "Your Venue is Pending";

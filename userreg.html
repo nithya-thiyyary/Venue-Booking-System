@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Registering User
+</title>
+<style>
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+input,
+label {
+    margin: .4rem 0;
+}
+ 
+</style>
+</head>
+<body bgcolor="lavender">
+<center><h1><i>Registering a New User</i></h1></center>
+<form action="regconnect.php" method="POST">
+<center><label for="Username"><b>Userid:</b></label>
+<input type="text" name="userid" required><br>
+<center><label for="Username"><b>Username:</b></label>
+<input type="text" name="Username" required><br>
+<label for="Password"><b>Password:</b></label>
+<input type="Password" name="Password" required><br>
+<label for="Email"><b>Email</b></label>
+<input type="email" name="email_id" required><br>
+<center><label><b>Confirm Password:</b></label>
+<input type="password" name="Confirmpassword" required></center>
+<label><b>Phone Number</b></label>
+<input type="tel" name="phoneno" required><br><br>
+<input type="submit" value="Submit">
+           <input type="reset">
+</center>
+   
+
+</form>
+</body>
+</html>
